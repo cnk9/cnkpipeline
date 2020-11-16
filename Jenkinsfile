@@ -1,6 +1,6 @@
 node {
       stage ('git clone'){
-	  git credentialsId: 'github_root',url:'https://github.com/cnk9/cnkgit.git'
+	  git credentialsId: 'https://github.com/cnk9/cnkpipeline.git'
 	  }
 	  stage('clean'){
 	  sh 'mvn clean'
